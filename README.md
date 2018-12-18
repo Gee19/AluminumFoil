@@ -47,6 +47,16 @@ Your PC can now communicate with TinFoil. Leave your Switch on the `USB Install`
 
 Building AluminumFoil requires [libusb](https://libusb.info/).
 
-Run with `go run main.go` or build with `./build.sh` and execute the resulting binary. `build.sh` includes the neccesary compiler flags to include libsub in the binary.
+Install dependencies:
+    
+    $ go get github.com/AlecAivazis/survey
+    
+    $ go get github.com/google/gousb
+
+If gousb fails, install pkg-config:
+
+    $ brew install pkg-config
+
+Run with `go run main.go` or build with `./build.sh` and execute the resulting binary. `build.sh` includes the neccesary compiler flags to include libusb in the binary.
 
 AluminumFoil has been tested on Windows 10 x64. AluminumFoil is in Alpha and should not be expected to work under any circumstances. I am not responsible for lost data.
